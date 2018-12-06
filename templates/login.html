@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 align="center">Login to the Website!</h1>
+    <br/><br/><br/><br/>
+    <div align="center">
+        <form method="POST" action="/login.html">
+            Login Email:&nbsp;&nbsp;<input type="email" name="email" required/>
+            <br/><br/>
+            Login Password:&nbsp;&nbsp<input type="password"
+                                             name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            <br/><br/><br/><br/>
+            <input type="submit" value="Login" name="Login"/><br/><br/><br/><br/>
+
+
+        </form>
+    </div>
+    <div align="center">
+        <form method="POST" action="/login.html">
+            <input type="submit" value="GoogleLogin" name="GoogleLogin"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="FacebookLogin" name="FacebookLogin"/>
+        </form>
+    </div>
+</body>
+</html>
