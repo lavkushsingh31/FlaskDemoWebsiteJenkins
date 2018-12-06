@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 align="center">Welcome to the Registration Portal!</h1>
+    <br/><br/><br/><br/>
+    <div align="center">
+        <form method="POST" action="">
+            Name:&nbsp;&nbsp; <input type="text" name="username" required/>
+            <br/><br/>
+            Email:&nbsp;&nbsp; <input type="email" name="email" required/>
+            <br/><br/>
+            Password:&nbsp;&nbsp; <input type="password"
+                                         name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                         title="Must contain at least one number and one uppercase
+                                                and lowercase letter, and should be at least 8 characters long" required>
+            <br/><br/><br/><br/>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
